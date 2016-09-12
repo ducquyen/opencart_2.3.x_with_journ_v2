@@ -6,22 +6,23 @@ define('HTTP_SERVER', 'http://savstore.com/');
 define('HTTPS_SERVER', 'http://savstore.com/');
 
 // DIR
-define('DIR_APPLICATION', '/home/alex/sites/savstore.com/catalog/');
-define('DIR_SYSTEM', '/home/alex/sites/savstore.com/system/');
-define('DIR_IMAGE', '/home/alex/sites/savstore.com/image/');
-define('DIR_LANGUAGE', '/home/alex/sites/savstore.com/catalog/language/');
-define('DIR_TEMPLATE', '/home/alex/sites/savstore.com/catalog/view/theme/');
-define('DIR_CONFIG', '/home/alex/sites/savstore.com/system/config/');
-define('DIR_CACHE', '/home/alex/sites/savstore.com/system/storage/cache/');
-define('DIR_DOWNLOAD', '/home/alex/sites/savstore.com/system/storage/download/');
-define('DIR_LOGS', '/home/alex/sites/savstore.com/system/storage/logs/');
-define('DIR_MODIFICATION', '/home/alex/sites/savstore.com/system/storage/modification/');
-define('DIR_UPLOAD', '/home/alex/sites/savstore.com/system/storage/upload/');
+define('MAIN_SAV', __DIR__);
+define('DIR_APPLICATION', MAIN_SAV . '/catalog/');
+define('DIR_SYSTEM', MAIN_SAV . '/system/');
+define('DIR_IMAGE', MAIN_SAV . '/image/');
+define('DIR_LANGUAGE', MAIN_SAV . '/catalog/language/');
+define('DIR_TEMPLATE', MAIN_SAV . '/catalog/view/theme/');
+define('DIR_CONFIG', MAIN_SAV . '/system/config/');
+define('DIR_CACHE', MAIN_SAV . '/system/storage/cache/');
+define('DIR_DOWNLOAD', MAIN_SAV . '/system/storage/download/');
+define('DIR_LOGS', MAIN_SAV . '/system/storage/logs/');
+define('DIR_MODIFICATION', MAIN_SAV . '/system/storage/modification/');
+define('DIR_UPLOAD', MAIN_SAV . '/system/storage/upload/');
 
 // DB
 define('DB_DRIVER', 'mysqli');
 define('DB_HOSTNAME', 'localhost');
-define('DB_USERNAME', 'root');
+define('DB_USERNAME', 'savstore_ua');
 define('DB_PASSWORD', 'falcons');
 define('DB_DATABASE', 'savstore_ua');
 define('DB_PORT', '3306');
